@@ -9,7 +9,7 @@ Lärandemål: beskriva delarna av och terminologin för ett datorsystem översik
 (1)
 Namnge den komponent i datorn som utför grundläggande aritmetiska operationer.
 ```
-(A) CPU
+(A) CPU [RÄTT SVAR]
 (B) Operativsystem (Operating System på engelska)
 (C) RAM
 (D) Användargränssnitt (User Interface)
@@ -20,14 +20,14 @@ utan enbart lagrar resultat och delresultat?
 ```
 (A) CPU
 (B) Operativsystem (Operating System på engelska)
-(C) RAM
+(C) RAM [RÄTT SVAR]
 (D) Användargränssnitt (User Interface)
 ```
 (3)
 Vilket av dessa är inte ett operativsystem?
 ```
 (A) Android.
-(B) Atom.
+(B) Atom. [RÄTT SVAR]
 (C) Linux.
 (D) iOS.
 (E) MacOSX.
@@ -36,7 +36,7 @@ Vilket av dessa är inte ett operativsystem?
 (4)
 Vilken av dessa ingår normalt sett inte i ett användargränssnitt?
 ```
-Drivrutiner
+Drivrutiner [RÄTT SVAR]
 Fönster
 Knappar
 Menyer
@@ -45,6 +45,7 @@ Scrollbars
 (5)
 Namnge denna klassiska modell av datorn.
 ![Bild med CPU, RAM, input och output](mystery.png)
+[RÄTT SVAR] Von Neumann-arkitekturen
 # Beskriva källkod
 Lärandemål: beskriva källkoden till ett dataprogram med rätt terminologi.
 
@@ -57,7 +58,7 @@ Dessa symboler:
 ```
 (A) identifierare (identifier på engelska)
 (B) avgränsare (delimiter)
-(C) operatorer (operators)
+(C) operatorer (operators) [RÄTT SVAR]
 (D) litteraler (literals)
 (E) nyckelord (keywords)
 ```
@@ -69,7 +70,7 @@ Endast en av dessa är ett uttryck. Vilken?
 i = 23
 if a < 200:
     print("Finklädsel!")
-(B)
+(B) [RÄTT SVAR]
 n_bananas*23 + 100
 (C)
 for i in range(10):
@@ -87,7 +88,7 @@ input
 ```
 ...är ett exempel på...
 ```
-(A) identifierare (identifier på engelska)
+(A) identifierare (identifier på engelska) [RÄTT SVAR]
 (B) avgränsare (delimiter)
 (C) operator (operator)
 (D) litteraler (literal)
@@ -101,7 +102,7 @@ input
 ...är ett exempel på...
 ```
 (A) identifierare (identifier på engelska)
-(B) avgränsare (delimiter)
+(B) avgränsare (delimiter) [RÄTT SVAR]
 (C) operator (operator)
 (D) litteral (literal)
 (E) nyckelord (keyword)
@@ -111,7 +112,7 @@ input
 Vilken av följande definierar begreppet syntax?
 ```
 (A) Ett program som översätter pythonkod till assembler.
-(B) Regler för hur symboler får kombineras till ett program.
+(B) Regler för hur symboler får kombineras till ett program. [RÄTT SVAR]
 (C) Den mest effektiva lösningen på ett programmeringsproblem.
 (D) Kopplingen mellan namnet på någonting och dess betydelse.
 ```
@@ -125,7 +126,7 @@ a = 13.0
 ```
 bool
 complex
-float
+float [RÄTT SVAR]
 int
 NoneType
 str
@@ -140,7 +141,7 @@ b = 2 + a
 ```
 bool
 complex
-float
+float [RÄTT SVAR]
 int
 NoneType
 str
@@ -156,7 +157,7 @@ class AI:
 ai = AI()
 ```
 ```
-(A) AI
+(A) AI [RÄTT SVAR]
 (B) class
 (C) type
 ```
@@ -169,7 +170,7 @@ exempel:
 ```
 AttributeError
 SyntaxError
-TypeError
+TypeError [RÄTT SVAR]
 ZeroDivisionError
 ```
 (15)
@@ -178,7 +179,7 @@ Vilken av dessa är INTE en datatyp?
 (A) int
 (B) bool
 (C) str
-(D) print
+(D) print [RÄTT SVAR]
 (E) complex
 (F) float
 ```
@@ -186,7 +187,7 @@ Vilken av dessa är INTE en datatyp?
 Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska och aritmetiska uttryck.
 
 (16)
-Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alter-nativ får detta Python3-program att exekvera raden med print?
+Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alternativ får detta Python3-program att exekvera raden med print?
 ```
 def main():
     # Här ska svaret stoppas in i koden.
@@ -197,14 +198,14 @@ def main():
 main()
 ```
 ```
-(A) a, b, c = True, True, True
+(A) a, b, c = True, True, True [RÄTT SVAR]
 (B) a, b, c = True, True, False
 (C) a, b, c = True, False, True
 (D) a, b, c = True, False, False
-(E) a, b, c = False, True, True
+(E) a, b, c = False, True, True [RÄTT SVAR]
 (F) a, b, c = False, True, False
-(G) a, b, c = False, False, True
-(H) a, b, c = False, False, False
+(G) a, b, c = False, False, True [RÄTT SVAR]
+(H) a, b, c = False, False, False [RÄTT SVAR]
 (I) Inget av ovanstående alternativ.
 ```
 
@@ -214,12 +215,27 @@ Tre variabler; a, b och c pekar var och en på antingen True eller False. Ge a, 
 (a or (not b)) and (b or (not c)) and ((not b) or (not c)) \
 and ((not a) or b) and (a or b)
 ```
-
+Vi testar i iPython, men på tentan får det göras manuellt:
+```
+In [14]: for a in [True, False]:
+   ....:     for b in [True, False]:
+   ....:         for c in [True, False]:
+   ....:             if (a or (not b)) and (b or (not c)) and ((not b) or (not c)) \
+   ....:             and ((not a) or b) and (a or b):
+   ....:                 print("a =", a, "b =", b, "c =", c)
+   ....:                 
+('a =', True, 'b =', True, 'c =', False) [RÄTT SVAR]
+```
 (18)
 Vad skriver nedanstående program ut?
 ```
 dygder = ["rättvisa", "klokhet", "tapperhet", "måttfullhet"]
 print(dygder[1], dygder[-1])
+```
+
+```
+SVAR:
+('klokhet', 'måttfullhet')
 ```
 
 (19)
@@ -232,7 +248,7 @@ while argos <= 20:
     argos += 7
 ```
 ```
-1. 0 7 14
+1. 0 7 14 [RÄTT SVAR]
 2. 0 7 14 20
 3. 0 7 14 21
 4. 7 14 21
@@ -249,7 +265,7 @@ if argonauter == 50:
 2. == borde vara =
 3. Den saknar villkor
 4. Man kan inte skriva ut 50
-5. Inget av ovanstående
+5. Inget av ovanstående [RÄTT SVAR]
 ```
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
@@ -272,7 +288,7 @@ main()
 (A) 13 42 13 42
 (B) 13 13 13 13
 (C) 42 42 42 42
-(D) 13 42 42 13
+(D) 13 42 42 13 [RÄTT SVAR]
 (E) 42 13 13 42
 (F) 42 13 42 13
 ```
@@ -295,7 +311,7 @@ main()
 (A) tapperhet rättvisa klokhet måttfullhet
 (B) tapperhet tapperhet klokhet måttfullhet
 (C) rättvisa klokhet tapperhet måttfullhet
-(D) rättvisa klokhet klokhet måttfullhet [RÄTT SVAR]
+(D) rättvisa klokhet klokhet måttfullhet
 (E) klokhet måttfullhet rättvisa tapperhet
 ```
 (20)
@@ -315,7 +331,7 @@ def main():
 main()
 ```
 ```
-(A) Malala Yousafzai Malala
+(A) Malala Yousafzai Malala [RÄTT SVAR]
 (B) Malala Yousafzai Malala Yousafzai
 (C) Yousafzai Malala
 (D) Malala Yousafzai
@@ -334,6 +350,11 @@ def main():
 
 
 main()
+```
+
+Programmet skriver ut:
+```
+Nicole
 ```
 # Lådor och pilar
 Lärandemål: grafiskt beskriva kopplingen mellan variabelnamn, typer och data.
@@ -470,9 +491,9 @@ mystery()
 ```
 
 (A) Det skriver “Rekursion” exakt en gång.
-(B) Raden med print körs inte en enda gång.
+(B) Raden med print körs inte en enda gång. [RÄTT SVAR]
 (C) Det skriver “Rekursion” om och om igen tills någon slår av det.
-(D) Det kraschar.
+(D) Det kraschar. [RÄTT SVAR]
 (E) Det skriver “Rekursion” färre än 100 gånger och avslutas sedan utan att krascha.
 (F) Inget av ovanstående alternativ.
 
@@ -481,7 +502,7 @@ Vilket/vilka påståenden om rekursioner stämmer?
 ```
 (A) Det finns alltid ett och bara ett basfall för en rekursion.
 (B) Den del av koden som utgör ett basfall innehåller oftast ett eller flera rekursiva anrop.
-(C) Ett rekursivt anrop bör ha andra argument än de argument som funktionen anropades med.
+(C) Ett rekursivt anrop bör ha andra argument än de argument som funktionen anropades med. [RÄTT SVAR]
 (D) Om bara argumenten till det rekursiva anropet är annorlunda än de argument som funktionen anropades med så kommer rekursionen till sist att avslutas utan att det blir recursion error.
 ```
 (33)
@@ -500,7 +521,7 @@ print(mystery(3))
 2. 2
 3. 3
 4. 4
-5. 5
+5. 5 [RÄTT SVAR]
 6. 6
 7. 7
 8. 8
@@ -524,7 +545,7 @@ print(mystery(3))
 3. 3
 4. 4
 5. 5
-6. 6
+6. 6 [RÄTT SVAR]
 7. 7
 8. 8
 9. 9
@@ -540,6 +561,6 @@ I föregående uppgift. Vad kallas denna bit av koden:
 (A) Basfall
 (B) Funktionsdeklaration
 (C) Grundfall
-(D) Rekursivt fall
+(D) Rekursivt fall [RÄTT SVAR]
 (E) Slutfall
 ```
