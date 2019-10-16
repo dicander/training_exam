@@ -374,13 +374,14 @@ v1 = [1, 2]
 v2 = v1 + [3, 4]
 # Den kommenterade raden
 ```
+![Lösningsförslag](26.png)
 (27)
 Rita ett låd- och pildiagram över minnet efter att följande rad har körts:
 ```
 first = destroy_element(first, 2)
 ```
 ...i programmet nedan:
-```
+```python
 class Node:
     def __init__(self, value, following):
         self.value = value
@@ -425,7 +426,7 @@ if __name__ == '__main__':
 ```
 [Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
 (28)
-Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas iblandräckviddpå svenska), rita dem i samma rektangel/rektanglar.
+Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas ibland räckvidd på svenska), rita dem i samma rektangel/rektanglar.
 ```
 class Person:
     """A person with name and age."""
@@ -446,12 +447,14 @@ class Person:
 
 main()
 ```
+![](28.png)
 (29)
-Rita en minnesbild med låd och pildiagram för hur det ser ut när allt innan den kom-menterade raden har körts.
+Rita en minnesbild med låd och pildiagram för hur det ser ut när allt innan den kommenterade raden har körts.
 ```
 happy = 2018
 new = happy
-year = newhappy += 1
+year = new
+happy += 1
 # Låd- och pildiagram här.
 ```
 (30)

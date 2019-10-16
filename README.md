@@ -300,7 +300,7 @@ main()
 ```
 (20)
 Vad skriver följande Python3-program ut?
-```
+```python
 def mystery(name):
     name += " " + "Yousafzai"
     print(name, end=" ")
@@ -323,7 +323,7 @@ main()
 ```
 
 Vad skriver programmet nedan ut?
-```
+```python
 def mystery(name):
     name += " Blomgren"
 
@@ -347,7 +347,7 @@ vid en viss position under programmets körning. Du behöver ha med:
 möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt det
 stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
 (26)
-Rita ett låd och pildiagram när programmet når den kommenterade raden:
+Rita ett låd- och pildiagram när programmet når den kommenterade raden:
 ```
 v1 = [1, 2]
 v2 = v1 + [3, 4]
@@ -404,7 +404,7 @@ if __name__ == '__main__':
 ```
 [Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
 (28)
-Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas iblandräckviddpå svenska), rita dem i samma rektangel/rektanglar.
+Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas ibland räckvidd på svenska), rita dem i samma rektangel/rektanglar.
 ```
 class Person:
     """A person with name and age."""
@@ -426,11 +426,12 @@ class Person:
 main()
 ```
 (29)
-Rita en minnesbild med låd och pildiagram för hur det ser ut när allt innan den kom-menterade raden har körts.
+Rita en minnesbild med låd och pildiagram för hur det ser ut när allt innan den kommenterade raden har körts.
 ```
 happy = 2018
 new = happy
-year = newhappy += 1
+year = new
+happy += 1
 # Låd- och pildiagram här.
 ```
 (30)
