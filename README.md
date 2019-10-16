@@ -1,18 +1,50 @@
 Träningstentan förklarar tentans 7 lärandemål genom exempeltal plockade från gamla tentor.
 
+På samtliga uppgifter med program så förutsätts att det är Python version 3
+och inte en äldre version.
+
 # Hårdvara och operativsystem
 Lärandemål: beskriva delarna av och terminologin för ett datorsystem översiktligt: CPU, minne, operativsystem och användargränssnitt.
 
 (1)
-
+Namnge den komponent i datorn som utför grundläggande aritmetiska operationer.
+```
+(A) CPU
+(B) Operativsystem (Operating System på engelska)
+(C) RAM
+(D) Användargränssnitt (User Interface)
+```
 (2)
-
+Vad kallas en komponent med förändringsbart minne som inte utför några beräkningar
+utan enbart lagrar resultat och delresultat?
+```
+(A) CPU
+(B) Operativsystem (Operating System på engelska)
+(C) RAM
+(D) Användargränssnitt (User Interface)
+```
 (3)
-
+Vilket av dessa är inte ett operativsystem?
+```
+(A) Android.
+(B) Atom.
+(C) Linux.
+(D) iOS.
+(E) MacOSX.
+(F) Windows.
+```
 (4)
-
+Vilken av dessa ingår normalt sett inte i ett användargränssnitt?
+```
+Drivrutiner
+Fönster
+Knappar
+Menyer
+Scrollbars
+```
 (5)
-
+Namnge denna klassiska modell av datorn.
+![Bild med CPU, RAM, input och output](mystery.png)
 # Beskriva källkod
 Lärandemål: beskriva källkoden till ett dataprogram med rätt terminologi.
 
@@ -55,7 +87,7 @@ input
 ```
 ...är ett exempel på...
 ```
-(A) identifierare (identifier)
+(A) identifierare (identifier på engelska)
 (B) avgränsare (delimiter)
 (C) operator (operator)
 (D) litteraler (literal)
@@ -68,8 +100,8 @@ input
 ```
 ...är ett exempel på...
 ```
-(A) identifierare (identifier)
-(B) avgränsare (delimiter på engelska)
+(A) identifierare (identifier på engelska)
+(B) avgränsare (delimiter)
 (C) operator (operator)
 (D) litteral (literal)
 (E) nyckelord (keyword)
@@ -86,9 +118,60 @@ Vilken av följande definierar begreppet syntax?
 # Datatyper
 Lärandemålet: beskriva och tillämpa grundläggande datatyper, klasser och typkonverteringar.
 (11)
+Vilken datatyp får a?
+```
+a = 13.0
+```
+```
+bool
+complex
+float
+int
+NoneType
+str
+Ingen alls. Det blir syntaxfel.
+```
 (12)
+Vilken datatyp får b?
+```
+a = 13.0
+b = 2 + a
+```
+```
+bool
+complex
+float
+int
+NoneType
+str
+Ingen alls. Det blir syntaxfel.
+```
 (13)
+Vilken datatyp får ai?
+```
+class AI:
+    pass
+
+
+ai = AI()
+```
+```
+(A) AI
+(B) class
+(C) type
+```
 (14)
+Vilket fel inträffar om man försöker addera en sträng med en int som i följande
+exempel:
+```
+13 + "foobar"
+```
+```
+AttributeError
+SyntaxError
+TypeError
+ZeroDivisionError
+```
 (15)
 # Uttryck och flödeskontroll
 Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska och aritmetiska uttryck.
@@ -131,11 +214,34 @@ print(dygder[1], dygder[-1])
 ```
 
 (19)
+Vad skrivs ut av följande satser:
 
-
+```python
+argos = 0
+while argos <= 20:
+  print(argos, end = " ")
+  argos += 7
+```
+```
+1. 0 7 14
+2. 0 7 14 20
+3. 0 7 14 21
+4. 7 14 21
+5. Inget av ovanstående
+```
 (20)
-
-
+Vad/vilka fel finns i följande if-sats?
+```
+if argonauter == 50:
+    print "Dom var 50"
+```
+```
+1. Ett kolon saknas efter print
+2. == borde vara =
+3. Den saknar villkor
+4. Man kan inte skriva ut 50
+5. Inget av ovanstående
+```
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
 (21)
@@ -363,5 +469,61 @@ Vilket/vilka påståenden om rekursioner stämmer?
 (D) Om bara argumenten till det rekursiva anropet är annorlunda än de argument somfunktionen anropades med så kommer rekursionen till sist att avslutas utan att detblir recursion error.
 ```
 (33)
+Vad skriver följande program ut?
+```
+def mystery(n):
+    if n <= 0:
+        return 1
+    return mystery(n-1)+mystery(n-2)
+
+
+print(mystery(3))
+```
+```
+1. 1
+2. 2
+3. 3
+4. 4
+5. 5
+6. 6
+7. 7
+8. 8
+9. 9
+10. Inget av ovanstående alternativ
+```
 (34)
+Vad skriver följande program ut?
+```
+def mystery(n):
+    if n <= 0:
+        return 1
+    else:
+        return n*mystery(n-1)
+
+print(mystery(3))
+```
+```
+1. 1
+2. 2
+3. 3
+4. 4
+5. 5
+6. 6
+7. 7
+8. 8
+9. 9
+10. Inget av ovanstående alternativ
+```
 (35)
+I föregående uppgift. Vad kallas denna bit av koden:
+```
+    else:
+        return n*mystery(n-1)
+```
+```
+(A) Basfall
+(B) Funktionsdeklaration
+(C) Grundfall
+(D) Rekursivt fall
+(E) Slutfall
+```
