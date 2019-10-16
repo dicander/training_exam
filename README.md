@@ -504,7 +504,9 @@ Vilket/vilka påståenden om rekursioner stämmer?
 (A) Det finns alltid ett och bara ett basfall för en rekursion.
 (B) Den del av koden som utgör ett basfall innehåller oftast ett eller flera rekursiva anrop.
 (C) Ett rekursivt anrop bör ha andra argument än de argument som funktionen anropades med.
-(D) Om bara argumenten till det rekursiva anropet är annorlunda än de argument som funktionen anropades med så kommer rekursionen till sist att avslutas utan att det blir recursion error.
+(D) Om bara argumenten till det rekursiva anropet är annorlunda än
+de argument som funktionen anropades med så kommer rekursionen till
+sist att avslutas utan att det blir recursion error.
 ```
 (33)
 Vad skriver följande program ut?
