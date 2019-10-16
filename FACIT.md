@@ -367,11 +367,13 @@ vid en viss position under programmets körning. Du behöver ha med:
 4. Ta med alla objekt som har existerat under programmets körning. Om det är
 möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt det
 stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
+
+
 (26)
 Rita ett låd och pildiagram när programmet når den kommenterade raden:
 ```
-v1 = [1, 2]
-v2 = v1 + [3, 4]
+v1 = [1000, 2000]
+v2 = v1 + [3000, 4000]
 # Den kommenterade raden
 ```
 ![Lösningsförslag](26.png)
@@ -424,7 +426,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-[Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
+![](27.png)
 (28)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas ibland räckvidd på svenska), rita dem i samma rektangel/rektanglar.
 ```
@@ -457,6 +459,7 @@ year = new
 happy += 1
 # Låd- och pildiagram här.
 ```
+![](29.png)
 (30)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut då körningen når den kommenterade raden.
 ```
@@ -467,17 +470,17 @@ class Item:
         self.next = next
 
 
-    def main():
-        first = Item()
-        first.next = Item()
-        first.next.next = Item()
-        first.next = first.next.next
-        # Rita hur minnet ser ut här
+def main():
+    first = Item()
+    first.next = Item()
+    first.next.next = Item()
+    first.next = first.next.next
+    # Rita hur minnet ser ut här
 
 
 main()
 ```
-
+![](30.png)
 
 # Rekursion
 Lärandemål: Felsöka, och med rätt terminologi beskriva rekursiva algoritmer.

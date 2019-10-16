@@ -3,6 +3,8 @@ Träningstentan förklarar tentans 7 lärandemål genom exempeltal plockade frå
 På samtliga uppgifter med program så förutsätts att det är Python version 3
 och inte en äldre version.
 
+Facit finns länkat från längst ner i provet. Lycka till!
+
 # Hårdvara och operativsystem
 Lärandemål: beskriva delarna av och terminologin för ett datorsystem översiktligt: CPU, minne, operativsystem och användargränssnitt.
 
@@ -133,7 +135,7 @@ Ingen alls. Det blir syntaxfel.
 ```
 (12)
 Vilken datatyp får b?
-```
+```python
 a = 13.0
 b = 2 + a
 ```
@@ -163,7 +165,7 @@ ai = AI()
 (14)
 Vilket fel inträffar om man försöker addera en sträng med en int som i följande
 exempel:
-```
+```python
 13 + "foobar"
 ```
 ```
@@ -187,7 +189,7 @@ Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska oc
 
 (16)
 Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alter-nativ får detta Python3-program att exekvera raden med print?
-```
+```python
 def main():
     # Här ska svaret stoppas in i koden.
     if ( not a or b) and (not b or c):
@@ -210,7 +212,7 @@ main()
 
 (17)
 Tre variabler; a, b och c pekar var och en på antingen True eller False. Ge a, b och c värden som gör att det logiska uttrycket nedan blir True. Om det finns flera lösningar så räcker en av dem (vilken som helst) för full poäng. Parenteserna kring not-uttrycken behövs inte tekniskt sett, men de gör uttrycket lättare att läsa.
-```
+```python
 (a or (not b)) and (b or (not c)) and ((not b) or (not c)) \
 and ((not a) or b) and (a or b)
 ```
@@ -240,7 +242,7 @@ while argos <= 20:
 ```
 (20)
 Vad/vilka fel finns i följande if-sats?
-```
+```python
 if argonauter == 50:
     print "De var 50"
 ```
@@ -254,7 +256,7 @@ if argonauter == 50:
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
 (21)
-```
+```python
 def mystery(a, b):
     a, b = b, a
     print(a, b, end = " ")
@@ -277,7 +279,7 @@ main()
 (F) 42 13 42 13
 ```
 (19) Vad skriver detta program ut?
-```
+```python
 def mystery(dygder):
     dygder[1] = dygder[2]
 
@@ -402,7 +404,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-![](27.png)
 
 (28)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas ibland räckvidd på svenska), rita dem i samma rektangel/rektanglar.
@@ -445,12 +446,12 @@ class Item:
         self.next = next
 
 
-    def main():
-        first = Item()
-        first.next = Item()
-        first.next.next = Item()
-        first.next = first.next.next
-        # Rita hur minnet ser ut här
+def main():
+    first = Item()
+    first.next = Item()
+    first.next.next = Item()
+    first.next = first.next.next
+    # Rita hur minnet ser ut här
 
 
 main()
@@ -462,7 +463,7 @@ Lärandemål: Felsöka, och med rätt terminologi beskriva rekursiva algoritmer.
 
 (31)
 Vilket/Vilka alternativ beskriver vad detta Python3-program gör?
-```
+```python
 def mystery():
     mystery()
     print("Rekursion")
@@ -488,7 +489,7 @@ Vilket/vilka påståenden om rekursioner stämmer?
 ```
 (33)
 Vad skriver följande program ut?
-```
+```python
 def mystery(n):
     if n <= 0:
         return 1
@@ -511,7 +512,7 @@ print(mystery(3))
 ```
 (34)
 Vad skriver följande program ut?
-```
+```python
 def mystery(n):
     if n <= 0:
         return 1
@@ -545,3 +546,5 @@ I föregående uppgift. Vad kallas denna bit av koden:
 (D) Rekursivt fall
 (E) Slutfall
 ```
+
+[FACIT](FACIT.md)
