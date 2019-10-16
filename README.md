@@ -3,27 +3,93 @@ Träningstentan förklarar tentans 7 lärandemål genom exempeltal plockade frå
 # Hårdvara och operativsystem
 Lärandemål: beskriva delarna av och terminologin för ett datorsystem översiktligt: CPU, minne, operativsystem och användargränssnitt.
 
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
 # Beskriva källkod
 Lärandemål: beskriva källkoden till ett dataprogram med rätt terminologi.
 
 (6)
 Dessa symboler:
 ```
-&   |   ^   <   ==
+&   |   +   <   ==
 ```
 är exempel på något som i Python3 kallas för:
 ```
-(A) identifierare
-(B) avgränsare (delimiter på engelska)
-(C) operatorer
-(D) literaler
+(A) identifierare (identifier på engelska)
+(B) avgränsare (delimiter)
+(C) operatorer (operators)
+(D) litteraler (literals)
 (E) nyckelord (keywords)
 ```
 
+(7)
+Endast en av dessa är ett uttryck. Vilken?
+```
+(A)
+i = 23
+if a < 200:
+    print("Finklädsel!")
+(B)
+n_bananas*23 + 100
+(C)
+for i in range(10):
+    print(i)
+(D)
+n_coconuts = 17*4711 + 1673
+(E)
+while CURRENT_YEAR == 1066:
+    print("Thou shalt proceed with haste!")
+```
+
+(8)
+```
+input
+```
+...är ett exempel på...
+```
+(A) identifierare (identifier)
+(B) avgränsare (delimiter)
+(C) operator (operator)
+(D) litteraler (literal)
+(E) nyckelord (keyword)
+```
+
+(9)
+```
+:
+```
+...är ett exempel på...
+```
+(A) identifierare (identifier)
+(B) avgränsare (delimiter på engelska)
+(C) operator (operator)
+(D) litteral (literal)
+(E) nyckelord (keyword)
+```
+
+(10)
+Vilken av följande definierar begreppet syntax?
+```
+(A) Ett program som översätter pythonkod till assembler.
+(B) Regler för hur symboler får kombineras till ett program.
+(C) Den mest effektiva lösningen på ett programmeringsproblem.
+(D) Kopplingen mellan namnet på någonting och dess betydelse.
+```
 # Datatyper
 Lärandemålet: beskriva och tillämpa grundläggande datatyper, klasser och typkonverteringar.
 (11)
-
+(12)
+(13)
+(14)
+(15)
 # Uttryck och flödeskontroll
 Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska och aritmetiska uttryck.
 
@@ -51,7 +117,7 @@ main()
 ```
 
 (17)
-Tre variabler; a, b och c pekar var och en på antingen True eller False. Ge a, b och cvärden som gör att det logiska uttrycket nedan blir True. Om det finns flera lösningarså räcker en av dem (vilken som helst) för full poäng. Parenteserna kring not-uttryckenbehövs inte tekniskt sett, men de gör uttrycket lättare att läsa.
+Tre variabler; a, b och c pekar var och en på antingen True eller False. Ge a, b och c värden som gör att det logiska uttrycket nedan blir True. Om det finns flera lösningar så räcker en av dem (vilken som helst) för full poäng. Parenteserna kring not-uttrycken behövs inte tekniskt sett, men de gör uttrycket lättare att läsa.
 ```
 (a or (not b)) and (b or (not c)) and ((not b) or (not c)) \
 and ((not a) or b) and (a or b)
@@ -63,6 +129,12 @@ Vad skriver nedanstående program ut?
 dygder = ["rättvisa", "klokhet", "tapperhet", "måttfullhet"]
 print(dygder[1], dygder[-1])
 ```
+
+(19)
+
+
+(20)
+
 
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
