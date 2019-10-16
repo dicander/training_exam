@@ -173,6 +173,15 @@ TypeError
 ZeroDivisionError
 ```
 (15)
+Vilken av dessa är INTE en datatyp?
+```
+(A) int
+(B) bool
+(C) str
+(D) print
+(E) complex
+(F) float
+```
 # Uttryck och flödeskontroll
 Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska och aritmetiska uttryck.
 
@@ -219,8 +228,8 @@ Vad skrivs ut av följande satser:
 ```python
 argos = 0
 while argos <= 20:
-  print(argos, end = " ")
-  argos += 7
+    print(argos, end=" ")
+    argos += 7
 ```
 ```
 1. 0 7 14
@@ -233,7 +242,7 @@ while argos <= 20:
 Vad/vilka fel finns i följande if-sats?
 ```
 if argonauter == 50:
-    print "Dom var 50"
+    print "De var 50"
 ```
 ```
 1. Ett kolon saknas efter print
@@ -256,6 +265,7 @@ def main():
     mystery(a, b)
     print(a, b)
 
+
 main()
 ```
 ```
@@ -276,15 +286,16 @@ def main():
     mystery(dygder)
     for x in dygder:
         print(x, end="")
-        print()
+    print()
 
-    main()
+
+main()
 ```
 ```
 (A) tapperhet rättvisa klokhet måttfullhet
 (B) tapperhet tapperhet klokhet måttfullhet
 (C) rättvisa klokhet tapperhet måttfullhet
-(D) rättvisa klokhet klokhet måttfullhet
+(D) rättvisa klokhet klokhet måttfullhet [RÄTT SVAR]
 (E) klokhet måttfullhet rättvisa tapperhet
 ```
 (20)
@@ -292,7 +303,7 @@ Vad skriver följande Python3-program ut?
 ```
 def mystery(name):
     name += " " + "Yousafzai"
-    print(name, end = " ")
+    print(name, end=" ")
 
 
 def main():
@@ -336,7 +347,12 @@ vid en viss position under programmets körning. Du behöver ha med:
 möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt det
 stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
 (26)
-
+Rita ett låd och pildiagram när programmet når den kommenterade raden:
+```
+v1 = [1, 2]
+v2 = v1 + [3, 4]
+# Den kommenterade raden
+```
 (27)
 Rita ett låd- och pildiagram över minnet efter att följande rad har körts:
 ```
