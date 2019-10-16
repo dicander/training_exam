@@ -582,7 +582,7 @@ print(mystery(3))
 10. Inget av ovanstående alternativ
 ```
 (35)
-I föregående uppgift. Vad kallas denna bit av koden:
+I föregående uppgift, vad kallas denna bit av koden:
 ```
     else:
         return n*mystery(n-1)
