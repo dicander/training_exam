@@ -278,7 +278,7 @@ main()
 (E) 42 13 13 42
 (F) 42 13 42 13
 ```
-(19) Vad skriver detta program ut?
+(22) Vad skriver detta program ut?
 ```python
 def mystery(dygder):
     dygder[1] = dygder[2]
@@ -300,7 +300,7 @@ main()
 (D) rättvisa klokhet klokhet måttfullhet [RÄTT SVAR]
 (E) klokhet måttfullhet rättvisa tapperhet
 ```
-(20)
+(23)
 Vad skriver följande Python3-program ut?
 ```python
 def mystery(name):
@@ -323,7 +323,7 @@ main()
 (D) Malala Yousafzai
 (E) Malala Yousafzai Yousafzai
 ```
-
+(24)
 Vad skriver programmet nedan ut?
 ```python
 def mystery(name):

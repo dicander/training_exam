@@ -120,7 +120,7 @@ Vilken av följande definierar begreppet syntax?
 Lärandemålet: beskriva och tillämpa grundläggande datatyper, klasser och typkonverteringar.
 (11)
 Vilken datatyp får a?
-```
+```python
 a = 13.0
 ```
 ```
@@ -134,7 +134,7 @@ Ingen alls. Det blir syntaxfel.
 ```
 (12)
 Vilken datatyp får b?
-```
+```python
 a = 13.0
 b = 2 + a
 ```
@@ -149,7 +149,7 @@ Ingen alls. Det blir syntaxfel.
 ```
 (13)
 Vilken datatyp får ai?
-```
+```python
 class AI:
     pass
 
@@ -164,7 +164,7 @@ ai = AI()
 (14)
 Vilket fel inträffar om man försöker addera en sträng med en int som i följande
 exempel:
-```
+```python
 13 + "foobar"
 ```
 ```
@@ -188,7 +188,7 @@ Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska oc
 
 (16)
 Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alternativ får detta Python3-program att exekvera raden med print?
-```
+```python
 def main():
     # Här ska svaret stoppas in i koden.
     if ( not a or b) and (not b or c):
@@ -216,7 +216,7 @@ Tre variabler; a, b och c pekar var och en på antingen True eller False. Ge a, 
 and ((not a) or b) and (a or b)
 ```
 Vi testar i iPython, men på tentan får det göras manuellt:
-```
+```python
 In [14]: for a in [True, False]:
    ....:     for b in [True, False]:
    ....:         for c in [True, False]:
@@ -256,7 +256,7 @@ while argos <= 20:
 ```
 (20)
 Vad/vilka fel finns i följande if-sats?
-```
+```python
 if argonauter == 50:
     print "De var 50"
 ```
@@ -270,7 +270,7 @@ if argonauter == 50:
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
 (21)
-```
+```python
 def mystery(a, b):
     a, b = b, a
     print(a, b, end = " ")
@@ -292,8 +292,8 @@ main()
 (E) 42 13 13 42
 (F) 42 13 42 13
 ```
-(19) Vad skriver detta program ut?
-```
+(22) Vad skriver detta program ut?
+```python
 def mystery(dygder):
     dygder[1] = dygder[2]
 
@@ -314,9 +314,9 @@ main()
 (D) rättvisa klokhet klokhet måttfullhet
 (E) klokhet måttfullhet rättvisa tapperhet
 ```
-(20)
+(23)
 Vad skriver följande Python3-program ut?
-```
+```python
 def mystery(name):
     name += " " + "Yousafzai"
     print(name, end=" ")
@@ -337,9 +337,9 @@ main()
 (D) Malala Yousafzai
 (E) Malala Yousafzai Yousafzai
 ```
-
+(24)
 Vad skriver programmet nedan ut?
-```
+```python
 def mystery(name):
     name += " Blomgren"
 
