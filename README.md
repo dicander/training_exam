@@ -348,18 +348,18 @@ möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt de
 stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
 (26)
 Rita ett låd- och pildiagram när programmet når den kommenterade raden:
-```
-v1 = [1, 2]
-v2 = v1 + [3, 4]
+```python
+v1 = [1000, 2000]
+v2 = v1 + [3000, 4000]
 # Den kommenterade raden
 ```
 (27)
 Rita ett låd- och pildiagram över minnet efter att följande rad har körts:
-```
+```python
 first = destroy_element(first, 2)
 ```
 ...i programmet nedan:
-```
+```python
 class Node:
     def __init__(self, value, following):
         self.value = value
@@ -402,10 +402,11 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-[Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
+![](27.png)
+
 (28)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas ibland räckvidd på svenska), rita dem i samma rektangel/rektanglar.
-```
+```python
 class Person:
     """A person with name and age."""
     def __init__(self, name, age):
@@ -427,7 +428,7 @@ main()
 ```
 (29)
 Rita en minnesbild med låd och pildiagram för hur det ser ut när allt innan den kommenterade raden har körts.
-```
+```python
 happy = 2018
 new = happy
 year = new
@@ -436,7 +437,7 @@ happy += 1
 ```
 (30)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut då körningen når den kommenterade raden.
-```
+```python
 class Item:
     """A singly linked list."""
     def __init__(self, value=None, next=None):
