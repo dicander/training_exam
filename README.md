@@ -337,6 +337,23 @@ def main():
 
 main()
 ```
+(25)
+Vad skriver följande Python3-program ut?
+```python
+def mystery(v, n):
+    n = n + 1
+    v[1] = n
+
+
+def main():
+    v = [1, 2]
+    n = 4
+    mystery(v, n)
+    print(v, n)
+
+
+main()
+```
 # Lådor och pilar
 Lärandemål: grafiskt beskriva kopplingen mellan variabelnamn, typer och data.
 På var och en av nedanstående uppgifter behöver du rita en bild över minnet
@@ -348,6 +365,8 @@ vid en viss position under programmets körning. Du behöver ha med:
 4. Ta med alla objekt som har existerat under programmets körning. Om det är
 möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt det
 stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
+
+
 (26)
 Rita ett låd- och pildiagram när programmet når den kommenterade raden:
 ```python

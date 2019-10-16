@@ -356,6 +356,27 @@ Programmet skriver ut:
 ```
 Nicole
 ```
+(25)
+Vad skriver följande Python3-program ut?
+```python
+def mystery(v, n):
+    n = n + 1
+    v[1] = n
+
+
+def main():
+    v = [1, 2]
+    n = 4
+    mystery(v, n)
+    print(v, n)
+
+
+main()
+```
+Rätt svar:
+```
+[1, 5] 4
+```
 # Lådor och pilar
 Lärandemål: grafiskt beskriva kopplingen mellan variabelnamn, typer och data.
 På var och en av nedanstående uppgifter behöver du rita en bild över minnet
