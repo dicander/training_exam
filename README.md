@@ -148,10 +148,68 @@ main()
 ```
 # Lådor och pilar
 Lärandemål: grafiskt beskriva kopplingen mellan variabelnamn, typer och data.
+På var och en av nedanstående uppgifter behöver du rita en bild över minnet
+vid en viss position under programmets körning. Du behöver ha med:
+1. Lådor för globala och lokala variabler.
+2. Se till att pilarna har spetsar och inte bara är streck.
+3. Referensräkning för alla lådor som är utpekade av pilar, utom heltal n där
+-5 <= n <= 256 samt objekten None, True och False.
+4. Ta med alla objekt som har existerat under programmets körning. Om det är
+möjligt att skräpsamlaren (the garbage colllector) har tagit bort det, låt det
+stå kvar men rita en pil från skräpsamlaren till objektet som ska tas bort och uppdatera referensräkningen från objekt som pekas ut av det snart döda objektet.
 (26)
+
 (27)
+Rita ett låd- och pildiagram över minnet efter att följande rad har körts:
+```
+first = destroy_element(first, 2)
+```
+...i programmet nedan:
+```
+class Node:
+    def __init__(self, value, following):
+        self.value = value
+        self.following = following
+
+
+def print_values(first):
+    temp = first
+    while temp:
+        print(temp.value)
+        temp = temp.following
+
+
+def create_list(size):
+    first = Node(size, None)
+    for i in range(size-1, 0, -1):
+        first = Node(i, first)
+    return first
+
+
+def destroy_element(first, index):
+    """returns the first element where index has been destroyed"""
+    if index == 0:
+        return first.following
+    answer = first #we will change this variable
+    for i in range(index-1):
+        first = first.following
+    following_following = first.following.following
+    first.following = following_following
+    return answer
+
+
+def main():
+    first = create_list(4)
+    print_values(first)
+    first = destroy_element(first, 2)
+    print_values(first)
+
+
+if __name__ == '__main__':
+    main()
+```
 (28)
-Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningennår den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas iblandräckviddpå svenska), rita dem i samma rektangel/rektanglar.
+Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas iblandräckviddpå svenska), rita dem i samma rektangel/rektanglar.
 ```
 class Person:
     """A person with name and age."""
@@ -200,6 +258,8 @@ class Item:
 
 main()
 ```
+[Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
+
 # Rekursion
 Lärandemål: Felsöka, och med rätt terminologi beskriva rekursiva algoritmer.
 
