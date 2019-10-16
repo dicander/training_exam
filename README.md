@@ -208,6 +208,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+[Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
 (28)
 Rita en minnesbild med låd- och pildiagram för hur det ser ut i minnet då körningen når den kommenterade raden. Om flera lådor ligger i samma scope (scope kallas iblandräckviddpå svenska), rita dem i samma rektangel/rektanglar.
 ```
@@ -258,7 +259,7 @@ class Item:
 
 main()
 ```
-[Facit med bild](https://github.com/dicander/box_arrow_diagram/blob/master/facit.md )
+
 
 # Rekursion
 Lärandemål: Felsöka, och med rätt terminologi beskriva rekursiva algoritmer.
