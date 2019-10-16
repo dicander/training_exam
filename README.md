@@ -287,7 +287,7 @@ def main():
     dygder = ["rättvisa", "tapperhet", "klokhet", "måttfullhet"]
     mystery(dygder)
     for x in dygder:
-        print(x, end="")
+        print(x, end=" ")
     print()
 
 
@@ -297,7 +297,7 @@ main()
 (A) tapperhet rättvisa klokhet måttfullhet
 (B) tapperhet tapperhet klokhet måttfullhet
 (C) rättvisa klokhet tapperhet måttfullhet
-(D) rättvisa klokhet klokhet måttfullhet [RÄTT SVAR]
+(D) rättvisa klokhet klokhet måttfullhet
 (E) klokhet måttfullhet rättvisa tapperhet
 ```
 (23)
