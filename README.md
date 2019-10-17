@@ -92,7 +92,7 @@ input
 (A) identifierare (identifier på engelska)
 (B) avgränsare (delimiter)
 (C) operator (operator)
-(D) literaler (literal)
+(D) literal (literal)
 (E) nyckelord (keyword)
 ```
 
@@ -434,14 +434,14 @@ class Person:
         self.age = age
 
 
-    def birthday(p):
-        p.age += 1
-        # Låd- och pildiagram här.
+def birthday(p):
+    p.age += 1
+    # Låd- och pildiagram här.
 
 
-    def main():
-        director = Person("Stephen Spielberg", 71)
-        birthday(director)
+def main():
+    director = Person("Stephen Spielberg", 71)
+    birthday(director)
 
 
 main()

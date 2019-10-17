@@ -91,7 +91,7 @@ input
 (A) identifierare (identifier på engelska) [RÄTT SVAR]
 (B) avgränsare (delimiter)
 (C) operator (operator)
-(D) literaler (literal)
+(D) literal (literal)
 (E) nyckelord (keyword)
 ```
 
