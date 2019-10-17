@@ -59,7 +59,7 @@ Dessa symboler:
 (A) identifierare (identifier på engelska)
 (B) avgränsare (delimiter)
 (C) operatorer (operators) [RÄTT SVAR]
-(D) litteraler (literals)
+(D) literaler (literals)
 (E) nyckelord (keywords)
 ```
 
@@ -91,7 +91,7 @@ input
 (A) identifierare (identifier på engelska) [RÄTT SVAR]
 (B) avgränsare (delimiter)
 (C) operator (operator)
-(D) litteraler (literal)
+(D) literaler (literal)
 (E) nyckelord (keyword)
 ```
 
@@ -104,7 +104,7 @@ input
 (A) identifierare (identifier på engelska)
 (B) avgränsare (delimiter) [RÄTT SVAR]
 (C) operator (operator)
-(D) litteral (literal)
+(D) literal (literal)
 (E) nyckelord (keyword)
 ```
 
@@ -269,7 +269,7 @@ if argonauter == 50:
 ```
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
-(21)
+(21) Vad skriver detta program ut?
 ```python
 def mystery(a, b):
     a, b = b, a
