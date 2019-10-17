@@ -118,6 +118,7 @@ Vilken av följande definierar begreppet syntax?
 ```
 # Datatyper
 Lärandemålet: beskriva och tillämpa grundläggande datatyper, klasser och typkonverteringar.
+
 (11)
 Vilken datatyp får a?
 ```python
@@ -458,14 +459,14 @@ class Person:
         self.age = age
 
 
-    def birthday(p):
-        p.age += 1
-        # Låd- och pildiagram här.
+def birthday(p):
+    p.age += 1
+    # Låd- och pildiagram här.
 
 
-    def main():
-        director = Person("Stephen Spielberg", 71)
-        birthday(director)
+def main():
+    director = Person("Stephen Spielberg", 71)
+    birthday(director)
 
 
 main()

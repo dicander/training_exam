@@ -119,6 +119,7 @@ Vilken av följande definierar begreppet syntax?
 ```
 # Datatyper
 Lärandemålet: beskriva och tillämpa grundläggande datatyper, klasser och typkonverteringar.
+
 (11)
 Vilken datatyp får a?
 ```
