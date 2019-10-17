@@ -189,7 +189,7 @@ Vilken av dessa är INTE en datatyp?
 Lärandemålet: beskriva, tillämpa och felsöka flödeskontroll samt logiska och aritmetiska uttryck.
 
 (16)
-Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alter-nativ får detta Python3-program att exekvera raden med print?
+Byt ut kommentaren i koden nedan mot ett svarsalternativ i taget. Vilket/vilka alternativ får detta Python3-program att exekvera raden med print?
 ```python
 def main():
     # Här ska svaret stoppas in i koden.
