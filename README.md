@@ -256,7 +256,9 @@ if argonauter == 50:
 ```
 # Räckvidd och livslängd
 Lärandemålet: beskriva en variabels räckvidd och livslängd.
-(21) Vad skriver detta program ut?
+
+(21)
+Vad skriver detta program ut?
 ```python
 def mystery(a, b):
     a, b = b, a
